@@ -36,8 +36,13 @@ function render_menu()
 		$items[$row['id']] = $row;
 	}
 
+	/*
 	$result = build_menu_items($items);
-	
+	echo '<pre>';
+	var_dump($result);
+	echo '</pre>';
+	exit;
+	*/
 }
 
 function build_menu_items($items, $parent_id = 0)
@@ -68,56 +73,4 @@ function build_menu_items($items, $parent_id = 0)
 	return $return;
 }
 
-render_menu(); 
-
-
-
-
-function render_items()
-{
-	global $db, $lang;
-	ini_set('display_errors', '1');
-	error_reporting(E_ALL);
-
-	$sql = "
-		SELECT  *, title_{$lang} AS title, text_{$lang} AS text
-		FROM `items`
-	";	
-	// 	echo '<pre>';
-	// var_dump( $sql);
-	// echo '</pre>';
-	// exit;
-
-	$result = mysqli_query($db, $sql);
-
-	
-
-	$items = [];
-	$count = 0;
-	while($row = mysqli_fetch_assoc($result))
-	{
-		// $items[$row['id']] = $row;
-// 		echo '<pre>';
-// 	var_dump( $row);
-// 	echo '</pre>';
-// exit;
-			    if($count % 2 == 0){
-						echo	'<div class="features-row">';
-			    }
-										
-		echo '<section>
-						<span class="icon major ' . $row['img'] . '"></span>
-						<h3>'. $row['title'] .'</h3>
-						<p>'. $row['text'] .'</p>
-					</section>';
-
-
-					if(!($count % 2 == 0)){
-						echo '</div>';
-					}
-
-		$count++;			
-	}
-
-}
-
+render_menu();

@@ -16,10 +16,13 @@
 		</div>
 
 		<!-- Scripts -->
-			<script src="<?=PATH_ASSETS?>js/jquery.min.js"></script>
-			<script src="<?=PATH_ASSETS?>js/jquery.dropotron.min.js"></script>
-			<script src="<?=PATH_ASSETS?>js/jquery.scrollgress.min.js"></script>
-			<script src="<?=PATH_ASSETS?>js/skel.min.js"></script>
-			<script src="<?=PATH_ASSETS?>js/util.js"></script>
-			<!--[if lte IE 8]><script src="<?=PATH_ASSETS?>js/ie/respond.min.js"></script><![endif]-->
-			<script src="<?=PATH_ASSETS?>js/main.js"></script>
+			<script src="<?=PATH_ASSETS ?>js/jquery.min.js"></script>
+			<script src="<?=PATH_ASSETS ?>js/jquery.dropotron.min.js"></script>
+			<script src="<?=PATH_ASSETS ?>js/jquery.scrollgress.min.js"></script>
+			<script src="<?=PATH_ASSETS ?>js/skel.min.js"></script>
+			<script src="<?=PATH_ASSETS ?>js/util.js"></script>
+			<!--[if lte IE 8]><script src="<?=PATH_ASSETS ?>js/ie/respond.min.js"></script><![endif]-->
+			<script src="<?=PATH_ASSETS ?>js/main.js"></script>
+
+	</body>
+</html>

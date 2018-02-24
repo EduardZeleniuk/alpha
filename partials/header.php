@@ -6,18 +6,18 @@
 -->
 <html>
 	<head>
-		<title><?=$params['title']?></title>
+		<title><?=$params['title'] ?></title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="<?=PATH_ASSETS?>/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="<?=PATH_ASSETS?>css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="<?=PATH_ASSETS?>/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 8]><script src="<?=PATH_ASSETS ?>js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="<?=PATH_ASSETS ?>css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="<?=PATH_ASSETS ?>css/ie8.css" /><![endif]-->
 	</head>
-	<body <?=($params['is_home']? 'class = "landing"' : '')?>>
+	<body<?=($params['is_home'] ? ' class="landing"' : '') ?>>
 		<div id="page-wrapper">
 
 			<!-- Header -->
-				<header id="header" <?=($params['is_home'] ? 'class = "alt"' : '')?>>
+				<header id="header"<?=($params['is_home'] ? ' class="alt"' : '') ?>>
 					<h1><a href="index.php">Alpha</a> by HTML5 UP</h1>
 					<?php include PATH_PARTIALS . 'menu.php' ?>
 				</header>
