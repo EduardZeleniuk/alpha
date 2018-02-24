@@ -82,6 +82,7 @@ function render_items()
 	$sql = "
 		SELECT  *, title_{$lang} AS title, text_{$lang} AS text
 		FROM `items`
+		ORDER BY `ord` ASC
 	";	
 	// 	echo '<pre>';
 	// var_dump( $sql);
