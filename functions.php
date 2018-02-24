@@ -82,7 +82,7 @@ function render_items()
 	$sql = "
 		SELECT  *, title_{$lang} AS title, text_{$lang} AS text
 		FROM `items`
-		ORDER BY `ord` ASC
+		ORDER BY `order_id` ASC
 	";	
 	// 	echo '<pre>';
 	// var_dump( $sql);
@@ -91,9 +91,10 @@ function render_items()
 
 	$result = mysqli_query($db, $sql);
 
-	
+
 
 	$items = [];
+	$result_lenght = mysqli_num_rows($result);
 	$count = 0;
 	while($row = mysqli_fetch_assoc($result))
 	{
@@ -113,7 +114,7 @@ function render_items()
 					</section>';
 
 
-					if(!($count % 2 == 0)){
+					if(!($count % 2 == 0 AND $count != $result_lenght)){
 						echo '</div>';
 					}
 
