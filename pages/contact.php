@@ -46,7 +46,7 @@ render_header([
 
 
 <?php
-$name = trim($_POST['name']);
+	$name = trim($_POST['name']);
 	$email = trim($_POST['email']);
 	$subject = trim($_POST['subject']);
 	$message = trim($_POST['message']);
